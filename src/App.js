@@ -6,7 +6,7 @@ function App() {
   const nayoks =['rasel','Kona']
   return (
     <div className="App">
-      <Nayok name = {nayoks [0]} food= "Pasta"></Nayok>
+      <Nayok name = {nayoks [0]} food= "Pasta" age= "56"></Nayok>
        <Nayok name = {nayoks[1]}></Nayok>
        <Nayok name = "Salman Shah"></Nayok>
        <Nayok name = 'Sabnur'></Nayok>
@@ -31,6 +31,7 @@ function Nayok(props){
       <div style= {NayokStyle}>
     <h1>Nayok:{props.name}</h1>
   <h3>Food:{props.food}</h3>
+  <h2>I have done{props.age || 30 } Years </h2>
   </div>
   )
 }
